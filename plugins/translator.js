@@ -47,15 +47,23 @@ async (conn, mek, m, { from, q, reply }) => {
         const translation = response.data.responseData.translatedText;
 
         const translationMessage = `
-🌍 *SILENT-SOBX-MD TRANSLATION* 🌍
+╭┈───────────────•
+│ *[ • SILENT-SOBX-MD - TRANSLATION‎ • ]*
+╰┈───────────────•
+╭┈───────────────•
+│  ◦ 🔤 *Original*: ${textToTranslate}
+│  ◦ 
+│  ◦ 🔠 *Translated*: ${translation}
+│  ◦ 
+│  ◦ 🌐 *Language*: ${targetLang.toUpperCase()}
+│  ◦
+│  ◦ 📬 *SILENT-SOBX-MD CREATION*
+╰┈───────────────•
 
-🔤 *Original*: ${textToTranslate}
-
-🔠 *Translated*: ${translation}
-
-🌐 *Language*: ${targetLang.toUpperCase()}
-
-*SILENT-SOBX-MD CREATION*`;
+*•────────────•⟢*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
+*•────────────•⟢*
+`;
 
         return reply(translationMessage);
     } catch (e) {
